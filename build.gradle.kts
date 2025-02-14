@@ -34,6 +34,10 @@ kotlin {
 	}
 }
 
-tasks.withType<Test> {
-	useJUnitPlatform()
+tasks.withType<Jar> {
+    archiveFileName.set("myapp.jar")  // JAR 파일 이름 지정
+}
+
+tasks.withType<org.springframework.boot.gradle.tasks.bundling.BootJar> {
+    archiveFileName.set("myapp.jar")  // Spring Boot 실행 가능한 JAR 생성
 }
