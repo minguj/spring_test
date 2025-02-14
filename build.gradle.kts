@@ -31,7 +31,7 @@ dependencies {
 }
 
 application {
-    mainClass.set("com.example.demo")  // ✅ 실제 Main 클래스 패키지 경로로 변경!
+    mainClass.set("com.example.demo.DemoApplicationKt")  // ✅ 실제 Main 클래스 패키지 경로로 변경!
 }
 
 
