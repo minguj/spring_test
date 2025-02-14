@@ -3,10 +3,8 @@ plugins {
 	kotlin("plugin.spring") version "1.9.25"
 	id("org.springframework.boot") version "3.4.2"
 	id("io.spring.dependency-management") version "1.1.7"
+	application
 
-    // ✅ 추가해야 하는 플러그인
-    id("application")   // 애플리케이션 실행 가능하게 설정
-    id("java")          // Java 관련 기본 태스크(`clean` 등) 추가	
 }
 
 group = "com.example"
