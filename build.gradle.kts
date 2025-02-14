@@ -28,6 +28,11 @@ dependencies {
 	testRuntimeOnly("org.junit.platform:junit-platform-launcher")
 }
 
+application {
+    mainClass.set("com.example.demo")  // ✅ 실제 Main 클래스 패키지 경로로 변경!
+}
+
+
 kotlin {
 	compilerOptions {
 		freeCompilerArgs.addAll("-Xjsr305=strict")
