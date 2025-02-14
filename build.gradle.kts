@@ -41,6 +41,10 @@ kotlin {
 	}
 }
 
+tasks.register<Delete>("clean") {
+    delete(buildDir)
+}
+
 tasks.withType<Test> {
     useJUnitPlatform()
 }
